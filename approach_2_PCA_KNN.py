@@ -124,7 +124,7 @@ oned_unsam = Nifti3Dto2D(oned_unsam)
 print("Shape of the artifacts",art_data.shape)
 under_sampled_train,under_sampled_test, artifacts_train,artifacts_test = train_test_split(oned_unsam, art_data, test_size=0.2, random_state=0)
 print('split completed')
-"""#Find K value
+"""#Finding K value
 error_rate = []
 for i in range(1,44):
     knn = KNeighborsRegressor(n_neighbors=i)
